@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/placeImage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:transitionName="tImage" />
+
+        <LinearLayout
+            android:id="@+id/llEditTextHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/rosa">
+
+            <EditText
+                android:id="@+id/etTodo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_detail"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/placeNameHolder"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/primary_dark"
+            android:transitionName="tNameHolder">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="ALBUM"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:elevation="@dimen/button_elevation"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listDisc"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

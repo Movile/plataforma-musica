@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/placeCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="@dimen/card_corner_radius"
+    card_view:cardElevation="@dimen/card_elevation">
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="70dp">
+
+      <LinearLayout
+        android:id="@+id/mainHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          android:background="@android:color/transparent">
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight=".3"
+              android:background="@android:color/transparent"
+              android:layout_gravity="center_vertical"
+              android:gravity="center_vertical">
+
+          <ImageView
+              android:id="@+id/placeImage"
+              android:layout_width="64dp"
+              android:layout_height="64dp"
+              android:scaleType="centerCrop"
+              android:transitionName="tImage"
+              android:src="@drawable/disc"
+              android:background="@android:color/transparent"/>
+
+          </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/placeNameHolder"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:transitionName="tNameHolder"
+          android:layout_weight=".7"
+          android:background="?android:selectableItemBackground">
+
+        <TextView
+          android:id="@+id/placeName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:gravity="left"
+          android:paddingLeft="10dp"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:textColor="@color/rosa" />
+
+      </LinearLayout>
+
+      </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>
+
+

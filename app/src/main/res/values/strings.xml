@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">Travellist</string>
+  <string name="main_title">Around the world</string>
+  <string name="hello_world">Hello world!</string>
+  <string name="action_settings">Settings</string>
+    <string name="title_activity_album">AlbumActivity</string>
+    <string name="title_activity_splash">Splash</string>
+  <string name="testsong_20_sec">http://users.skynet.be/fa046054/home/P22/track06.mp3</string>
+</resources>
